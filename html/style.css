@@ -39,6 +39,7 @@ main {
     margin: 2rem auto;
     background: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 5rem; /* Add margin to the bottom to avoid overlap with footer */
 }
 
 h1 {
@@ -77,6 +78,7 @@ form button:hover {
 .response-container {
     display: flex;
     flex-direction: column;
+
 }
 
 textarea[readonly] {
@@ -87,6 +89,7 @@ textarea[readonly] {
     border: 1px solid #ccc;
     border-radius: 5px;
     resize: vertical;
+    height: calc(100vh - 50vh - 2rem); /* Adjust height to avoid overlap with footer */
 }
 
 footer {
