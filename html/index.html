@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIChat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>AIChat</h1>
+    </header>
+    <main>
+        <form action="/ask" method="post">
+            <label for="categories">Category</label>
+            <select name="categories" id="categories">
+                <option value="shell-script">Shell Script</option>
+                <option value="graphics-cards">Graphics Cards</option>
+                <option value="cisco-routers">Cisco Routers</option>
+            </select>
+            <label for="query">Your Query:</label>
+            <textarea id="query" name="query" rows="4" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+        <div class="response-container">
+            <label for="response">Response:</label>
+            <textarea id="response" name="response" rows="4" readonly></textarea>
+        </div>
+    </main>
+    <footer>
+        <p>1234 AI Street, Tech City, TX 12345</p>
+        <p>Project Collaborators: John Doe, Jane Smith, Bob Johnson, Alice Williams</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
